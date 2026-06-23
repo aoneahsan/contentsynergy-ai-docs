@@ -1,0 +1,62 @@
+# ContentSynergy AI — Documentation Index
+
+> ContentSynergy AI is a zero-cost, browser-based AI studio for creating and scheduling social media content. It generates text posts, images, video and reels, audio and music, 3D models, and surveys/polls using open-source models that run client-side (transformers.js / WebGPU / WebAudio / WebGL), with template and placeholder fallbacks when a model can't load. It also bundles 100+ creator and developer utilities. The app is free; AI runs on free, open models in your browser (optional bring-your-own-key providers for some flows). Live app: https://contentsynergy.aoneahsan.com. Author: Ahsan Mahmood (https://aoneahsan.com).
+
+## About
+
+ContentSynergy AI is a serverless SaaS for creators, marketers, and small businesses. There is no developer-funded paid LLM behind it: generation happens in the browser with open-source models (for example distilgpt2 for text via `@xenova/transformers`), and every feature degrades to a deterministic template/placeholder path when a model is unavailable so nothing ever hard-fails. Content, scheduling, templates, analytics, and preferences are stored in Firebase (Firestore) on the free tier; file uploads use FilesHub, never paid object storage. This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec.
+
+## Getting Started
+
+- [Introduction](https://contentsynergy-ai-docs.aoneahsan.com/intro): what ContentSynergy AI is, who it's for, and the zero-cost AI model.
+- [Installation & access](https://contentsynergy-ai-docs.aoneahsan.com/getting-started/installation): web app, Android, browser extension, and desktop.
+- [Quick Start](https://contentsynergy-ai-docs.aoneahsan.com/getting-started/quick-start): create and schedule your first post in five minutes.
+
+## Content Creation
+
+- [Text posts](https://contentsynergy-ai-docs.aoneahsan.com/content/text-posts): tones, lengths, languages, hashtags, emojis, LoRA adapters.
+- [Images](https://contentsynergy-ai-docs.aoneahsan.com/content/images): styles, moods, aspect ratios, templates, FilesHub uploads.
+- [Video & reels](https://contentsynergy-ai-docs.aoneahsan.com/content/video-reels): Ken Burns, image-to-video, timeline editor, honest ML limits.
+- [Audio & music](https://contentsynergy-ai-docs.aoneahsan.com/content/audio-music): text-to-speech, music generation, mixing, waveforms.
+- [3D models](https://contentsynergy-ai-docs.aoneahsan.com/content/3d-models): photogrammetry, glTF export, WebXR AR viewing.
+- [Surveys & polls](https://contentsynergy-ai-docs.aoneahsan.com/content/surveys-polls): 12 question types, conditional logic, D3.js analytics.
+
+## Publishing
+
+- [Social platforms](https://contentsynergy-ai-docs.aoneahsan.com/publishing/social-platforms): OAuth 2.0 + PKCE for 8 networks.
+- [Scheduling](https://contentsynergy-ai-docs.aoneahsan.com/publishing/scheduling): calendar, recurrence, queues, autopilot.
+- [Community templates](https://contentsynergy-ai-docs.aoneahsan.com/publishing/community-templates): marketplace, ratings, cloning, moderation.
+
+## AI & Customization
+
+- [How the AI works](https://contentsynergy-ai-docs.aoneahsan.com/ai/how-ai-works): the zero-cost, client-side model + fallback contract.
+- [Fine-tuning (LoRA)](https://contentsynergy-ai-docs.aoneahsan.com/ai/fine-tuning): adapters, training progress, brand voice.
+- [Themes & personalization](https://contentsynergy-ai-docs.aoneahsan.com/ai/themes-personalization): the 7-dimension theme customizer + cross-device sync.
+
+## Tools
+
+- [Creator & developer tools catalog](https://contentsynergy-ai-docs.aoneahsan.com/tools/overview): 100+ utilities (QR, hashing, color, gradients, favicons, SEO, conversions, and more).
+
+## Analytics & Compliance
+
+- [Analytics dashboard](https://contentsynergy-ai-docs.aoneahsan.com/analytics/dashboard): D3.js charts, A/B testing, exports.
+- [Privacy & GDPR](https://contentsynergy-ai-docs.aoneahsan.com/analytics/privacy-gdpr): data export, account deletion, consent.
+- [Multi-language](https://contentsynergy-ai-docs.aoneahsan.com/analytics/multi-language): six locales incl. Arabic RTL.
+
+## Platforms
+
+- [Web](https://contentsynergy-ai-docs.aoneahsan.com/platforms/web): the primary surface.
+- [Android](https://contentsynergy-ai-docs.aoneahsan.com/platforms/android): Capacitor app, permissions, edge-to-edge.
+- [Browser extension](https://contentsynergy-ai-docs.aoneahsan.com/platforms/browser-extension): the writing assistant.
+- [Desktop](https://contentsynergy-ai-docs.aoneahsan.com/platforms/desktop): Electron packaging for local/GPU workflows.
+
+## Concepts
+
+- [Architecture](https://contentsynergy-ai-docs.aoneahsan.com/concepts/architecture): client-side AI + Firebase + FilesHub.
+- [The zero-cost model](https://contentsynergy-ai-docs.aoneahsan.com/concepts/zero-cost-model): how the app stays free to run.
+
+## About the project
+
+- [About the Author](https://contentsynergy-ai-docs.aoneahsan.com/about-the-author): Ahsan Mahmood's profile, links, contact.
+- Live app: https://contentsynergy.aoneahsan.com
+- Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.contentsynergy

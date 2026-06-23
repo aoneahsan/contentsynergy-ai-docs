@@ -1,0 +1,12 @@
+/* TEAM */
+  Developer: Ahsan Mahmood
+  Site: https://aoneahsan.com
+  Contact: aoneahsan [at] gmail.com
+  GitHub: https://github.com/aoneahsan
+  LinkedIn: https://linkedin.com/in/aoneahsan
+
+/* SITE */
+  Product: ContentSynergy AI — https://contentsynergy.aoneahsan.com
+  Docs: https://contentsynergy-ai-docs.aoneahsan.com
+  Built with: Docusaurus, React, TypeScript
+  Last updated: 2026-06-23
