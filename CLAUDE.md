@@ -41,6 +41,11 @@ yarn typecheck
 
 `static/robots.txt` allows all major search + AI bots and links the sitemap. `static/llms.txt` indexes the site for LLMs. `docusaurus.config.ts` injects JSON-LD (WebSite, Organization, SoftwareApplication) and per-page OG/Twitter metadata. Sitemap auto-emits on build. Content tracker (in the app repo): `docs/tracking/contentsynergy-ai-docs-content-tracker.json`.
 
+## Gitignore Hygiene (IRON-SOLID)
+`.gitignore` stays current with the project structure — ignore only recoverable artifacts (build/`dist`/`www`/`node_modules`/logs/caches/IDE), never lose source. Custom rules always present: `*.ignore.*`, `project-record-ignore/`. This is a **PUBLIC** repo -> secrets/`.env`/keystores are NEVER tracked.
+Full rule + private/public protocol: `~/.claude/rules/project-config.md`.
+Gitignore Last Verified: 2026-06-24
+
 ## CLAUDE.md & AGENTS.md Dual-Sync (IRON-SOLID)
 
 Every rule here also lives in `AGENTS.md`. Update one → update the other.

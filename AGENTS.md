@@ -35,6 +35,11 @@ yarn typecheck
 
 `static/robots.txt` (search + AI bot allowlist + sitemap link), `static/llms.txt` (LLM index), JSON-LD (WebSite/Organization/SoftwareApplication) + OG/Twitter metadata in `docusaurus.config.ts`, auto-emitted sitemap. Content tracker (app repo): `docs/tracking/contentsynergy-ai-docs-content-tracker.json`.
 
+## Gitignore Hygiene (IRON-SOLID)
+`.gitignore` stays current with the project structure — ignore only recoverable artifacts (build/`dist`/`www`/`node_modules`/logs/caches/IDE), never lose source. Custom rules always present: `*.ignore.*`, `project-record-ignore/`. This is a **PUBLIC** repo -> secrets/`.env`/keystores are NEVER tracked.
+Full rule + private/public protocol: `~/.claude/rules/project-config.md`.
+Gitignore Last Verified: 2026-06-24
+
 ## CLAUDE.md & AGENTS.md Dual-Sync (IRON-SOLID)
 
 Every rule here also lives in `CLAUDE.md`. Update one → update the other.
