@@ -2,7 +2,7 @@
 
 Public documentation site for **[ContentSynergy AI](https://contentsynergy.aoneahsan.com)**, a zero-cost, browser-based AI studio for creating and scheduling social media content. Built with [Docusaurus](https://docusaurus.io/).
 
-- **Live docs:** https://contentsynergy-ai-docs.aoneahsan.com
+- **Live docs:** https://contentsynergy-docs.aoneahsan.com
 - **App:** https://contentsynergy.aoneahsan.com
 - **Google Play:** https://play.google.com/store/apps/details?id=com.aoneahsan.contentsynergy
 - **Author:** [Ahsan Mahmood](https://aoneahsan.com)
@@ -12,24 +12,17 @@ Public documentation site for **[ContentSynergy AI](https://contentsynergy.aonea
 This repo is **yarn-only** (Yarn Berry, `node-modules` linker).
 
 ```bash
-yarn install      # install dependencies
+yarn install --immutable  # install pinned dependencies
 yarn start        # local dev server on http://localhost:5962
 yarn build        # production build into ./build
 yarn typecheck    # tsc --noEmit
 ```
 
-## Hosting (dual)
+## Hosting
 
-The site deploys to two targets:
+GitHub Pages publishes the site from `.github/workflows/deploy-pages.yml` on each push to `main`. The custom domain is `contentsynergy-docs.aoneahsan.com`, matching `static/CNAME` and `docusaurus.config.ts`; it returned HTTPS 200 on 2026-10-13. Build and inspect the exact output in a controlled browser before pushing a change that publishes.
 
-1. **GitHub Pages** — `.github/workflows/deploy.yml` builds and publishes on every push to `main`. The custom domain comes from `static/CNAME` (`contentsynergy-ai-docs.aoneahsan.com`). Enable Pages → "GitHub Actions" in repo settings, then add the DNS CNAME at your registrar.
-2. **Firebase Hosting** (optional second target) — `firebase.json` + `.firebaserc` target the Firebase site `contentsynergy-ai-docs`. Create the Hosting site once, then:
-
-   ```bash
-   yarn firebase:deploy
-   ```
-
-Both are deploy steps the repo owner performs — see the parent app's `docs/MANUAL-TASKS.md`.
+No Firebase Hosting config files are checked into this repository. A preview script exists in `package.json`, but no Firebase docs deployment is verified by this README.
 
 ## Structure
 
