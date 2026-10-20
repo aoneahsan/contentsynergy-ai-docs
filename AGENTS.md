@@ -1,5 +1,7 @@
 # ContentSynergy AI public docs
 
+**Last Updated:** 2026-10-20
+
 **Context verified:** 2026-10-13. **Next routine pass:** 2026-11-12. **Repository:** public `aoneahsan/contentsynergy-ai-docs` main.
 
 This Docusaurus site is the independent public documentation repository nested in `../contentsynergy-ai-root/`. Its private app sibling is `../contentsynergy-ai/` main. The verified docs URL is `https://contentsynergy-docs.aoneahsan.com/`; the app URL is `https://contentsynergy.aoneahsan.com/`. The old `contentsynergy-ai-docs.aoneahsan.com` hostname did not resolve on 2026-10-13. `static/CNAME` and `docusaurus.config.ts` already use the verified host.
@@ -13,3 +15,9 @@ This Docusaurus site is the independent public documentation repository nested i
 - No Firebase config files are checked into this docs repository. A preview script in `package.json` is not evidence of a configured Firebase Hosting target; do not deploy there without verifying a target and authority. No product copy rewrite or docs publication beyond factual maintenance in Pass 1.
 
 Fleet state and 30-day eligibility: `/home/ahsan/Documents/01-code/docs/tracking/fleet-maintenance-tracker.json` and `project-context-budget-tracker.json`. Keep this guide and `CLAUDE.md` byte-identical. Do not merge the private `project-root` branch into either product main branch.
+
+## Stop-work Git gate
+
+<!-- RULE:stop-work-git-gate v2026-10-20 -->
+
+Before stopping, commit every legitimate change and work-progress checkpoint in this repository and each independent nested repository, fetch and merge the designated upstream, push the documented working branch, then verify an empty worktree and `0 0` ahead/behind. Never stash, discard, reset, rebase, or force-push. If synchronization is blocked, report the exact repository, branch, blocker, and next action instead of calling the work complete. The full workflow remains authoritative in `~/.claude/rules/git-workflow.md`.
