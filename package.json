@@ -2,20 +2,20 @@
   "name": "contentsynergy-ai-docs",
   "version": "0.1.0",
   "private": true,
-  "description": "Public documentation site for ContentSynergy AI (https://contentsynergy.aoneahsan.com) — a zero-cost, browser-based AI content studio. Built with Docusaurus, deployed to GitHub Pages + Firebase Hosting.",
+  "description": "Public documentation for ContentSynergy AI, built with Docusaurus and deployed through GitHub Pages.",
   "author": {
     "name": "Ahsan Mahmood",
     "email": "aoneahsan@gmail.com",
     "url": "https://aoneahsan.com"
   },
   "license": "MIT",
-  "homepage": "https://contentsynergy-ai-docs.aoneahsan.com",
+  "homepage": "https://contentsynergy-docs.aoneahsan.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aoneahsan/contentsynergy-ai-docs.git"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=24.13.0"
   },
   "scripts": {
     "docusaurus": "docusaurus",
@@ -27,22 +27,29 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc --noEmit",
-    "firebase:deploy:preview": "yarn build && npx -y firebase-tools@latest hosting:channel:deploy preview --project contentsynergy-ai-docs --expires 7d"
+    "dev": "docusaurus start --port 5962 --host 0.0.0.0",
+    "gates": "yarn typecheck && yarn build",
+    "deps:outdated": "yarn dlx npm-check-updates@latest --reject typescript",
+    "deps:update": "yarn dlx npm-check-updates@latest -u --reject typescript && yarn install"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.10.1",
-    "@docusaurus/preset-classic": "^3.10.1",
-    "@docusaurus/theme-mermaid": "^3.10.1",
+    "@docusaurus/core": "^3.10.2",
+    "@docusaurus/plugin-content-docs": "^3.10.2",
+    "@docusaurus/preset-classic": "^3.10.2",
+    "@docusaurus/theme-mermaid": "^3.10.2",
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.10.1",
-    "@docusaurus/tsconfig": "^3.10.1",
-    "@docusaurus/types": "^3.10.1",
+    "@docusaurus/faster": "^3.10.2",
+    "@docusaurus/module-type-aliases": "^3.10.2",
+    "@docusaurus/tsconfig": "^3.10.2",
+    "@docusaurus/types": "^3.10.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "typescript": "~6.0.3"
   },
   "browserslist": {
@@ -57,5 +64,5 @@
       "last 5 safari version"
     ]
   },
-  "packageManager": "yarn@4.17.1"
+  "packageManager": "yarn@4.18.1"
 }

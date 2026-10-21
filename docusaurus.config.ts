@@ -120,9 +120,12 @@ const config: Config = {
 
   i18n: { defaultLocale: 'en', locales: ['en'] },
 
+  future: { v4: true, faster: true },
+
   trailingSlash: false,
 
   markdown: {
+    format: 'detect',
     mermaid: true,
     hooks: { onBrokenMarkdownLinks: 'warn' },
   },

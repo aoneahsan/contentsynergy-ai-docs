@@ -14,15 +14,15 @@ This repo is **yarn-only** (Yarn Berry, `node-modules` linker).
 ```bash
 yarn install --immutable  # install pinned dependencies
 yarn start        # local dev server on http://localhost:5962
-yarn build        # production build into ./build
-yarn typecheck    # tsc --noEmit
+yarn gates        # typecheck and production build into ./build
+yarn serve        # serve the exact build on http://localhost:5963
 ```
 
 ## Hosting
 
 GitHub Pages publishes the site from `.github/workflows/deploy-pages.yml` on each push to `main`. The custom domain is `contentsynergy-docs.aoneahsan.com`, matching `static/CNAME` and `docusaurus.config.ts`; it returned HTTPS 200 on 2026-10-13. Build and inspect the exact output in a controlled browser before pushing a change that publishes.
 
-No Firebase Hosting config files are checked into this repository. A preview script exists in `package.json`, but no Firebase docs deployment is verified by this README.
+No Firebase Hosting config or deploy script is present. GitHub Pages is the only configured deployment target.
 
 ## Structure
 
